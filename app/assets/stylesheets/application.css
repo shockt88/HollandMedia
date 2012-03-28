@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require twitter/bootstrap
+ *= require_tree .
+*/
+
+html, body {
+height: 100%;
+width: 100%;
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+
+body{
+overflow:auto;
+}
+
+#full-screen-background-image {
+z-index: -999;
+min-height: 100%;
+min-width: 1024px;
+width: 100%;
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#wrapper {
+position: relative;
+}
+
+}
+.sidebar-nav {
+    padding: -10px 0;
+margin-top: 160px;
+}
+
+#sidebar {
+    float:right;
+}
+
+#content {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        float:none;
+    }
+}
+
+
+
+
